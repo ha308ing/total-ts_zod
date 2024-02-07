@@ -11,9 +11,9 @@ const StarWarsPeopleResults = z.object({
 });
 
 const logStarWarsPeopleResults = (
-  data: z.infer<typeof StarWarsPeopleResults>,
+  data: z.infer<typeof StarWarsPeopleResults>
 ) => {
-  data.results.map((person) => {
+  data.results.map(person => {
     console.log(person.name);
   });
 };
